@@ -28,18 +28,20 @@ body {
   flex-direction: column;
   background-color: gray;
   padding: 20px;
-  height: 50vh;
   gap: 10px;
+  border-radius: 10px;
 }
 
 .screen-container {
-  flex: 1;
+
+  height: 4em;
   font-family: 'Advanced Pixel LCD-7';
   border: 1px solid yellow;
 }
 
 .button-container {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   flex: 1;
   gap: 10px;
 }
@@ -47,32 +49,17 @@ body {
 button {
   font-family: 'Orbitron';
   font-weight: bold;
-  width: 20px;
   cursor: pointer;
-}
-
-.number-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  border: 1px solid yellowgreen;
-  gap: 10px;
-}
-
-.operator-container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 10px;
-  border: 1px solid lime;
 }
 
 .modifier-container {
   display: flex;
+  justify-content: center;
   gap: 10px;
-  border: 1px solid lightcoral
 }
 
 .modifier-container > button {
-  width: 100%;
+  flex: 1;
   background: red;
   color: white;
   border: 0;
