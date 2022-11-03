@@ -9,12 +9,10 @@
 </head>
 <body>
   <script type="text/javascript" src="./script.js" defer></script>
-  <header>
-    <h1>Calculator</h1>
-  </header>
   <div class="calculator-container">
     <div id="screen" class="screen-container">
-
+      <div id="currentinput">1234.567890+-/*</div>
+      <div id="result">123</div>
     </div>
     <div class="button-container">
       <button class="number">7</button>
@@ -33,10 +31,8 @@
       <button class="number">0</button>
       <button class="operator">=</button>
       <button class="operator">/</button>
-    </div>
-    <div class="modifier-container">
-      <button class="operator">CLEAR</button>
-      <button class="operator">DELETE</button>
+      <button class="operator grid-span-2" id="clear">CLEAR</button>
+      <button class="operator grid-span-2" id="delete">DELETE</button>
     </div>
   </div>
 </body>
