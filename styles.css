@@ -1,0 +1,79 @@
+@font-face {
+  font-family: 'Advanced Pixel LCD-7';
+  src: url(./fonts/AdvancedPixelLcd7.ttf);
+  font-family: 'Orbitron';
+  src: url(./fonts/Orbitron-Regular.ttf);
+}
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.calculator-container {
+  display: flex;
+  flex-direction: column;
+  background-color: gray;
+  padding: 20px;
+  height: 50vh;
+  gap: 10px;
+}
+
+.screen-container {
+  flex: 1;
+  font-family: 'Advanced Pixel LCD-7';
+  border: 1px solid yellow;
+}
+
+.button-container {
+  display: flex;
+  flex: 1;
+  gap: 10px;
+}
+
+button {
+  font-family: 'Orbitron';
+  font-weight: bold;
+  width: 20px;
+  cursor: pointer;
+}
+
+.number-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border: 1px solid yellowgreen;
+  gap: 10px;
+}
+
+.operator-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  border: 1px solid lime;
+}
+
+.modifier-container {
+  display: flex;
+  gap: 10px;
+  border: 1px solid lightcoral
+}
+
+.modifier-container > button {
+  width: 100%;
+  background: red;
+  color: white;
+  border: 0;
+}
